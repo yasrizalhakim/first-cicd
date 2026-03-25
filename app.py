@@ -4,7 +4,7 @@ app = Flask (__name__)
 
 @app.route("/")
 def home():
-    return "hello from my container!"
+    return "hello from my CI/CD pipeline!"
 
 @app.route("/health")
 def health():
