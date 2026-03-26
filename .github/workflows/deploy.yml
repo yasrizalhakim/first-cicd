@@ -24,3 +24,6 @@ jobs:
 
       - name: Push Docker image
         run: docker push ${{ secrets.DOCKER_USERNAME }}/my-first-flask-app:latest
+
+      - name: Trigger Render Deploy
+        run: curl ${{ secrets.RENDER_DEPLOY_HOOK }}
