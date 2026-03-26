@@ -10,6 +10,10 @@ def home():
     #return f"This page has been visited {count} times."
     return "API is LIVE!"
 
+@app.route("/welcome")
+def welcome():
+    return "Welcome to the API!"
+
 @app.route("/health")
 def health():
     return "App Health is running OK!"
