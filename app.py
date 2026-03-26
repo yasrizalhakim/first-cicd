@@ -1,13 +1,14 @@
 from flask import Flask
-from redis import Redis
+#from redis import Redis
 
 app = Flask (__name__)
-redis = Redis(host='redis', port=6379)
+#redis = Redis(host='redis', port=6379)
 
 @app.route("/")
 def home():
-    count = redis.incr('visits')
-    return f"This page has been visited {count} times."
+    #count = redis.incr('visits')
+    #return f"This page has been visited {count} times."
+    return "API is LIVE!"
 
 @app.route("/health")
 def health():
